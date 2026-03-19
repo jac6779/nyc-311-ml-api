@@ -1,24 +1,35 @@
 # NYC 311 Service Request Prediction API
 
-End-to-end machine learning project that predicts NYC 311 service request outcomes using historical complaint data. This project demonstrates a production-style ML workflow including data preprocessing, model training, containerized deployment, and real-time inference using AWS SageMaker.
+End-to-end machine learning project that predicts NYC 311 service request outcomes using historical complaint data. This project demonstrates a production-style ML workflow including data preprocessing, model training, containerized deployment, and real-time inference using AWS.
 
-The system is designed as a **portfolio-ready machine learning application**, showing how data science models can be operationalized and served through an API.
+The system is designed as a portfolio-ready machine learning application, showing how data science models can be operationalized and served through a live API.
 
 ---
 
-## Project Highlights
+## 🚀 Live API
+
+🔗 **Swagger Docs:**  
+https://dyypyhmjdv.us-east-1.awsapprunner.com/docs  
+
+🔗 **Health Check:**  
+https://dyypyhmjdv.us-east-1.awsapprunner.com/health  
+
+---
+
+## 📌 Project Highlights
 
 - Built an end-to-end ML pipeline for NYC 311 service request prediction  
 - Performed data preprocessing and feature engineering using Python and pandas  
 - Trained machine learning models using scikit-learn  
+- Combined preprocessing + model into a single deployable pipeline  
 - Containerized inference using Docker  
-- Deployed a live model endpoint with AWS SageMaker  
-- Integrated AWS services including S3, SageMaker, and IAM  
-- Designed the system for API-based access and automated data refreshes  
+- Deployed a live API using AWS App Runner  
+- Stored container images in Amazon ECR  
+- Designed interactive API with Swagger documentation  
 
 ---
 
-## Business Problem
+## 🧠 Business Problem
 
 New York City's 311 service request system receives millions of complaints each year covering issues such as:
 
@@ -37,69 +48,77 @@ Analyzing patterns in these requests can help:
 
 ---
 
-## Dataset
+## 📊 Dataset
 
-**Source:** NYC Open Data – 311 Service Requests  
+Source: NYC Open Data – 311 Service Requests  
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
 - Python  
 - Pandas / NumPy  
 - Scikit-learn  
-- AWS (S3, SageMaker, IAM)  
+- FastAPI  
 - Docker  
+- AWS (ECR, App Runner, IAM)  
 
 ---
 
-## Deployment Architecture
+## 🏗 Deployment Architecture
 
-NYC 311 Dataset → Feature Engineering → Model → Docker → SageMaker → API
+NYC 311 Dataset → Feature Engineering → ML Pipeline → Docker → Amazon ECR → AWS App Runner → Public API
 
 ---
 
-## Example API Request
+## 🔌 Example API Request
 
 ```json
 {
-  "borough": "BROOKLYN",
+  "agency": "NYPD",
   "complaint_type": "Noise - Residential",
-  "created_date": "2024-01-01 22:00:00"
+  "descriptor": "Loud Music/Party",
+  "location_type": "Residential Building/House",
+  "borough": "BROOKLYN",
+  "incident_zip": "11201",
+  "latitude": 40.6943,
+  "longitude": -73.9928,
+  "complaint_hr": 22,
+  "complaint_day": 5,
+  "complaint_month": 7
 }
 ```
 
----
-
-## Example Response
+## 📈 Example Response
 
 ```json
 {
-  "n_rows": 1,
-  "predictions": [
-    {
-      "pred_gt_7d": 1,
-      "pred_prob_gt_7d": 0.82,
-      "pred_prob_within_7d": 0.18,
-      "predicted_close_within_7_days": 0
-    }
-  ]
+  "prediction": 1.0,
+  "probability": 0.82
 }
 ```
 
 ---
 
-## Docker Usage
+## 🐳 Docker Usage
 
 ```bash
-docker build -t nyc311-ml-api .
-docker run -p 8080:8080 nyc311-ml-api
+docker build -t nyc-311-api .
+docker run -p 8080:8080 nyc-311-api
 ```
 
 ---
 
-## Future Improvements
+## 🔮 Future Improvements
 
-- Public API via API Gateway  
-- Automated data refresh  
-- Model retraining pipeline  
+- Simplify API inputs (derive time features automatically)  
+- Integrate live NYC Open Data API for real-time predictions  
+- Add automated retraining pipeline  
+- Add monitoring and logging  
+- Introduce API Gateway for advanced routing and security  
+
+---
+
+## 📌 Notes
+
+This project demonstrates transitioning from a notebook-based data science workflow to a production-ready ML system, including API design, containerization, and cloud deployment.
