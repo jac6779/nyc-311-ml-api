@@ -1,0 +1,1146 @@
+# NYC 311 Unique Values Reference
+
+Generated from `02_nyc_info_exploratory_analysis (1).parquet`
+
+## agency (13 unique)
+
+- DCWP
+- DEP
+- DHS
+- DOB
+- DOE
+- DOHMH
+- DOT
+- DPR
+- DSNY
+- HPD
+- NYPD
+- OTI
+- TLC
+
+## complaint_type (139 unique)
+
+- AHV Inspection Unit
+- APPLIANCE
+- Abandoned Bike
+- Abandoned Vehicle
+- Air Quality
+- Animal Facility - No Permit
+- Animal in a Park
+- Animal-Abuse
+- Asbestos
+- BEST/Site Safety
+- Beach/Pool/Sauna Complaint
+- Bench
+- Bike Rack
+- Bike/Roller/Skate
+- Blocked Driveway
+- Boilers
+- Broken Parking Meter
+- Building Drinking Water Tank
+- Building Marshal's Office
+- Building/Use
+- Bus Stop Shelter Complaint
+- Bus Stop Shelter Placement
+- Commercial Disposal Complaint
+- Consumer Complaint
+- Cranes and Derricks
+- Curb Condition
+- DEP Street Condition
+- DOOR/WINDOW
+- Damaged Tree
+- Day Care
+- Dead Animal
+- Dead/Dying Tree
+- Dept of Investigations
+- Derelict Vehicles
+- Dirty Condition
+- Disorderly Youth
+- Drinking
+- Drinking Water
+- Drug Activity
+- Dumpster Complaint
+- E-Scooter
+- ELECTRIC
+- ELEVATOR
+- Electrical
+- Elevator
+- Emergency Response Team (ERT)
+- Encampment
+- FLOORING/STAIRS
+- Food Establishment
+- Food Poisoning
+- For Hire Vehicle Complaint
+- GENERAL
+- General Construction/Plumbing
+- Graffiti
+- Green Taxi Complaint
+- HEAT/HOT WATER
+- Hazardous Materials
+- Homeless Person Assistance
+- Illegal Animal Kept as Pet
+- Illegal Dumping
+- Illegal Fireworks
+- Illegal Parking
+- Illegal Posting
+- Illegal Tree Damage
+- Indoor Air Quality
+- Indoor Sewage
+- Industrial Waste
+- Investigations and Discipline (IAD)
+- Lead
+- LinkNYC
+- Litter Basket Complaint
+- Litter Basket Request
+- Lost Property
+- Lot Condition
+- Maintenance or Facility
+- Missed Collection
+- Mold
+- New Tree Request
+- Noise
+- Noise - Commercial
+- Noise - House of Worship
+- Noise - Park
+- Noise - Residential
+- Noise - Street/Sidewalk
+- Noise - Vehicle
+- Non-Emergency Police Matter
+- OUTSIDE BUILDING
+- Obstruction
+- Outdoor Dining
+- Overgrown Tree/Branches
+- PAINT/PLASTER
+- PLUMBING
+- Panhandling
+- Pet Sale
+- Plant
+- Plumbing
+- Posting Advertisement
+- Public Toilet
+- Real Time Enforcement
+- Recycling Basket Complaint
+- Residential Disposal Complaint
+- Rodent
+- Root/Sewer/Sidewalk Condition
+- SAFETY
+- Sanitation Worker or Vehicle Complaint
+- Scaffold Safety
+- School Maintenance
+- Sewer
+- Sidewalk Condition
+- Smoking or Vaping
+- Snow or Ice
+- Special Natural Area District (SNAD)
+- Special Projects Inspection Team (SPIT)
+- Street Condition
+- Street Light Condition
+- Street Sign - Damaged
+- Street Sign - Dangling
+- Street Sign - Missing
+- Street Sweeping Complaint
+- Taxi Complaint
+- Taxi Compliment
+- Traffic
+- Traffic Signal Condition
+- UNSANITARY CONDITION
+- Unleashed Dog
+- Unsanitary Animal Facility
+- Unsanitary Animal Pvt Property
+- Unsanitary Pigeon Condition
+- Uprooted Stump
+- Urinating in Public
+- Vendor Enforcement
+- Violation of Park Rules
+- WATER LEAK
+- Water Conservation
+- Water Quality
+- Water System
+- Wayfinding
+- Window Guard
+- Wood Pile Remaining
+
+## descriptor (642 unique)
+
+- 1 or 2
+- 3 or More
+- APARTMENT ONLY
+- APS
+- Abandoned Bike
+- Adjacent Buildings Not Protected
+- Adult Establishment
+- Advertising Sign/Billboard/Posters/Flexible Fabric - Illegal
+- Affecting Sewer or Foundation
+- After Hours - Licensed Est
+- After Hours Work - Illegal
+- After Hours Work - With An AHV Permit
+- Air: Dust, Construction/Demolition (AE4)
+- Air: Dust, Other (Use Comments) (AE5)
+- Air: Odor, Nail Salon (AD8)
+- Air: Odor, Sweet From Unknown Source (AZ1)
+- Air: Odor/Fumes, Restaurant (AD2)
+- Air: Odor/Fumes, Vehicle Idling (AD3)
+- Air: Other Air Problem (Use Comments) (AZZ)
+- Air: Smoke, Chimney or vent (AS1)
+- Air: Smoke, Vehicular (AA4)
+- Allowed in Smoke Free Area
+- Animal Odor
+- Animal Waste
+- Animals Sold From Residence
+- Art Supply Store
+- Asbestos Complaint (B1)
+- Auction House or Auctioneer
+- BASIN/SINK
+- BATHTUB/SHOWER
+- BBQ Outside Authorized Area
+- BELL/BUZZER/INTERCOM
+- BOILER
+- Bag/Wallet
+- Banging/Pounding
+- Barber Shop, Beauty Salon, or Nail Salon
+- Bare Hands in Contact w/ Food
+- Base Door
+- Beach/Pool Water
+- Beach/Pool/Sauna Unpermitted
+- Bent/Loose
+- Bicycle Chained to Tree
+- Bike Lane
+- Bike Signal
+- Biking/Rollerblading off Path
+- Bin Not Used
+- Bird
+- Blank Out Matrix Sgn
+- Blocked - ATM
+- Blocked - Construction
+- Blocked Bike Lane
+- Blocked Crosswalk
+- Blocked Hydrant
+- Blocked Sidewalk
+- Blocking Sidewalk or Street
+- Blocking Street
+- Bodega, Deli, or Convenience Store
+- Boiler - Defective/Inoperative/No Permit
+- Book/Stationery
+- Bracket Arm Broken
+- Branch Cracked and Will Fall
+- Branch or Limb Has Fallen Down
+- Branches Damaged
+- Broken Curb
+- Broken Glass
+- Broken Lock
+- Broken Sidewalk
+- Broken Window
+- Building
+- Building - Vacant, Open And Unguarded
+- Building Permit - None
+- Building Shaking/Vibrating/Structural Stability
+- Bulky Recycling
+- Bulky Trash
+- Bus Stop
+- CABINET
+- CARBON MONOXIDE DETECTOR
+- CEILING
+- CMU Communication
+- COOKING GAS
+- Cable
+- Canopy Complaint
+- Car Rental
+- Car Service Company Complaint
+- Car Wash
+- Car/Truck Horn
+- Car/Truck Music
+- Cat
+- Catch Basin Clogged/Flooding (Use Comments) (SC)
+- Catch Basin Grating Missing (SA4)
+- Catch Basin Search (SC2)
+- Catch Basin Sunken/Damaged/Raised (SC1)
+- Cave-in
+- Cell Phone Store
+- Cellar Door Defective
+- Cellar Door Open/Unprotected
+- Chained
+- Chained to Public Property
+- Chemical Odor (HD1)
+- Chemical Spill (IAC)
+- Chemical Spill/Release (HA1)
+- Chemical Vapors/Gases/Odors
+- Chronic
+- Chronic Dumping
+- Chronic Speeding
+- Chronic Stoplight Violation
+- Clear Street Light
+- Clear Water With Other Particles (Use Comments) (QEZ)
+- Clothing, Shoe, or Accessories Store
+- Clothing/Glasses
+- Cloudy Or Milky Water (QB1)
+- Cloudy Or Milky, Other (Use Comments) (QBZ)
+- Coin or Card Did Not Register
+- Commercial Overnight Parking
+- Compost
+- Concrete In Catch Basin (IEA)
+- Condition Attracting Rodents
+- Conduit
+- Cone
+- Congestion/Gridlock
+- Cons - Contrary/Beyond Approved Plans/Permits
+- Construction
+- Construction - Change Grade/Watercourse
+- Construction Debris
+- Construction Labor Provider
+- Containers Left Out After Collection
+- Controller
+- Controller Cabinet
+- Controller Flasher
+- Crane/Suspension Scaffold - No Permit/License/Cert./Unsafe/Illegal
+- Crash Cushion Defect
+- Credit Card Stuck in Meter
+- Culvert Blocked/Needs Cleaning (SE)
+- Curb Cut/Driveway/Carport - Illegal
+- Curb Defect-Metal Protruding
+- DAMP SPOT
+- DOOR
+- DOOR FRAME
+- DOOR TO DUMBWAITER
+- DOOR/FRAME
+- Damaged Bench
+- Damaged Other
+- Damaged or Vandalized
+- Damaged/Bent/Loose/Leaning
+- Damaged/Defective
+- Day Care Facility
+- Dead Animal
+- Dead Branches in Tree
+- Dealer in Products for the Disabled
+- Debris - Excessive
+- Debris - Falling Or In Danger Of Falling
+- Debris from Car Accident
+- Deer
+- Defacement
+- Defective Hardware
+- Defective Water Sampling Station (QSS)
+- Defective/Missing Curb Piece (SC4)
+- Demolition - Unsafe
+- Department Store or Megastore
+- Derelict Vehicles
+- Detached Trailer
+- Dirt or Gravel
+- Dirty Water (WE)
+- Dirty/Graffiti
+- Do Not Block the Box
+- Do Not Enter
+- Dog
+- Dog Off Leash
+- Dog Sold
+- Dog Waste
+- Domestic Strays
+- Donation Collection Bin
+- Door
+- Door Lock
+- Door to Door Sales
+- Double Parked Blocking Traffic
+- Double Parked Blocking Vehicle
+- Drag Racing
+- Driver Complaint - Non Passenger
+- Driver Complaint - Passenger
+- Driver Compliment
+- Drug Store or Pharmacy
+- Dry Cleaning Vapors (PERC)
+- Dumpster - Construction Waste
+- Dust Cover
+- Dust from Construction
+- E-Cigarette Sales
+- ELECTRIC/GAS RANGE
+- ENTIRE BUILDING
+- Egress - Doors Locked/Blocked/Improper/No Secondary Means
+- Electrical Wiring Defective/Exposed
+- Electronics Store
+- Electronics/Phones
+- Elevator - Multiple Devices On Property
+- Elevator - Single Device On Property/No Alternate Service
+- Employment Agency
+- Engine Idling
+- Entire Tree Has Fallen Down
+- Excavation Undermining Adjacent Building
+- Excessive Water In Basement (WEFB)
+- FIRE ESCAPE
+- FLOOR
+- Failed Street Repair
+- Failure To Maintain
+- Failure To Retain Water/Improper Drainage- (LL103/89)
+- Failure to Comply with Vacate Order
+- Farm Animal
+- Fence - None/Inadequate
+- Ferret
+- Fixture(S)
+- Fixture/Luminaire Damaged
+- Fixture/Luminaire Door Open
+- Fixture/Luminaire Hanging
+- Fixture/Luminaire Missing
+- Fixture/Luminaire Out Of Position
+- Flood Light Lamp Dim
+- Flood Light Lamp Out
+- Flyer or Handbill
+- Food Vendor
+- For One Address
+- Foundation
+- Furniture Store
+- GARBAGE/RECYCLING STORAGE
+- GUTTER/LEADER
+- Games of Chance
+- Garage or Parking Lot
+- Garbage or Litter
+- Gas Hook-Up/Piping - Illegal Or Defective
+- Gas Station Convenience Store
+- Gas Station Pumps
+- General Vendor
+- Gift, Novelty, or Souvenir Store
+- Glassware Broken
+- Glassware Hanging
+- Glassware Missing
+- Graffiti
+- Graffiti or Vandalism
+- Grass/Weeds
+- Grease In Sewer/Catch Basin (IDG)
+- Guard Rail - Street
+- HEAVY FLOW
+- Hardware Store
+- Heating Problem
+- High Water Pressure (WHP)
+- Highway Flooding (SH)
+- Hitting Building
+- Hitting Phone/Cable Lines
+- Hitting Power Lines
+- Home Heating Oil Company
+- Home Improvement Contractor
+- Honorary
+- Hotel or Motel
+- Hours of Operation
+- Human Feces
+- Hyd Valve Box Cover Missing (WV2)
+- Hydrant Defective (WC2)
+- Hydrant Knocked Over/Missing (WC)
+- Hydrant Leaking (WC1)
+- Hydrant Running (WC3)
+- Hydrant Running Full (WA4)
+- Idling or Blocking Traffic
+- Iguana
+- Illegal Conversion Of Commercial Bldg/Space To Other Uses
+- Illegal Conversion Of Residential Building/Space
+- Illegal Hotel Rooms In Residential Building
+- Illegal Tree Removal/Topo. Change in SNAD
+- Illegal Use Of A Hydrant (CIN)
+- Illegal Use Of Hose - Other (CCO)
+- Illegal Use Of Hose - Private Residence (CCR)
+- Illegal. Commercial Use In Resident Zone
+- Illness Caused by Drinking Water
+- Improperly Parked or Abandoned
+- In Car
+- In Post Base
+- In Public
+- Inadequate Support Shoring
+- Inadequate Sweeping
+- Inappropriate Behavior
+- Injured Wildlife
+- Integrity Complaint Referral
+- Investigative Inspection
+- JANITOR/SUPER
+- Jewelry
+- Jewelry Store
+- Junction Box
+- LED Pedestrian Unit
+- LIGHTING
+- LOW WATER PRESSURE - WLWP
+- Lack of Supplies
+- Lamppost Base Door/Cover Damaged
+- Lamppost Base Door/Cover Open
+- Lamppost Damaged
+- Lamppost Knocked Down
+- Lamppost Leaning
+- Lamppost Missing
+- Lamppost Wire Exposed
+- Landlord or Real Estate Agent
+- Landmark Bldg - Illegal Work
+- Lane Control Signal
+- Lane Station
+- Laundromat
+- Lead Kit Request (Residential) (L10)
+- Leak (Use Comments) (WA2)
+- Letter Grading
+- License Plate Obscured
+- Lighting
+- Lights From Parking Lot Shining On Building
+- Line/Marking - After Repaving
+- Line/Marking - Faded
+- Locksmith
+- Loose/Leaning Sign
+- Loud Music/Party
+- Loud Talking
+- Loud Television
+- MAILBOX
+- MAINTENANCE
+- MICROWAVE
+- MOLD
+- Manhole Cover Missing (Emergency) (SA3)
+- Manhole Overflow (Use Comments) (SA1)
+- Mast Arm
+- Material Storage - Unsafe
+- Mattress or Box Spring Uncovered
+- Merchandise
+- Metal Protruding - Sign Stump
+- Missing
+- Misuse
+- Mobile Food Vendor
+- Mouse Sighting
+- Moving Company
+- Multiple Street Lights Out
+- N/A
+- NO LIGHTING
+- Neglected
+- New Automatic Public Toilet Request
+- New Basket
+- New Bus Stop Shelter Placement
+- No Access
+- No Certificate Of Occupancy/Illegal/Contrary To CO
+- No Parking, Standing, Stopping
+- No Receipt
+- No Sampling Required, Requested Information (QG2)
+- No Shelter
+- No Water (WNW)
+- Noise
+- Noise, Barking Dog (NR5)
+- Noise, Ice Cream Truck (NR4)
+- Noise, Other Animals (NR6)
+- Noise:  lawn care equipment (NCL)
+- Noise: Alarms (NR3)
+- Noise: Boat(Engine,Music,Etc) (NR10)
+- Noise: Construction Before/After Hours (NM1)
+- Noise: Construction Equipment (NC1)
+- Noise: Jack Hammering (NC2)
+- Noise: Manufacturing Noise (NK1)
+- Noise: Other Noise Sources (Use Comments) (NZZ)
+- Noise: Private Carting Noise (NQ1)
+- Noise: air condition/ventilation equipment (NV1)
+- Non-Chronic
+- Non-Food Vendor
+- Nuisance/Truant
+- OUTLET COVER
+- OUTLET/SWITCH
+- Obstructing Public Use
+- Odor
+- Odor In Sewer/Catch Basin (ICB)
+- Oil Spill Into Basin/Sewer - Large (IABL)
+- Oil Spill Into Basin/Sewer - Small (IABS)
+- Oil Spill On Street, Large (HQL)
+- Oil Spill On Street, Small (HQS)
+- On Messenger
+- One Way
+- Online or Mail Order
+- Opossum
+- Other
+- Other (Explain Below)
+- Other (complaint details)
+- Other Animal
+- Other School Condition
+- Other Store (Non-Food)
+- Other/Unknown
+- Out of Order
+- Overflowing
+- Overflowing dumpster
+- Overnight Commercial Storage
+- PAVEMENT
+- PESTS
+- PORCH/BALCONY
+- POWER OUTAGE
+- Paper License Plates
+- Parking Permit Improper Use
+- Partial Access
+- Ped Flasher
+- Ped Lamp
+- Ped Multiple Lamps
+- Pedestrian Feature
+- Pedestrian Ramp Defective
+- Pedestrian Sign
+- Pedestrian Signal
+- Pedicab
+- Pet/Animal
+- Photocell (PEC) Missing
+- Pigeon Odor
+- Pigeon Waste
+- Planted Less Than 2 Years Ago
+- Planted More Than 2 Years Ago
+- Plants- Odor Related Problems (PO1)
+- Plate Condition - Anti-Skid
+- Plate Condition - Noisy
+- Plate Condition - Open
+- Plate Condition - Shifted
+- Playing in Unsuitable Place
+- Plumbing Problem
+- Plumbing Work - Illegal/No Permit/Standpipe/Sprinkler
+- Plumbing Work - Unlicensed/Illegal/Improper Work In Progress
+- Plumbing-Defective/Leaking/Not Maintained
+- Police Report Not Requested
+- Police Report Requested
+- Possible Water Main Break (Use Comments) (WA1)
+- Post
+- Posted Notice Or Order Removed/Tampered With
+- Posted Parking Sign Violation
+- Poster or Sign
+- Pothole
+- Privately Owned Public Space/Non-Compliance
+- Process Server
+- Public Complaint - Comm Location
+- Push Button
+- RADIATOR
+- RAIN GARDEN DEBRIS (GIRGD)
+- RAIN GARDEN STRUCTURE (GIRGS)
+- REFRIGERATOR
+- ROOF DOOR/HATCH
+- ROOFING
+- Raccoon
+- Rat Sighting
+- Rat or Mouse
+- Recreation Center
+- Recycling - Metal/Glass/Rigid Plastic
+- Recycling - Paper
+- Recycling - Paper/Metal/Glass/Rigid Plastic
+- Recycling Posters Not Posted
+- Refrigerator or Freezer Door Attached
+- Removal Request
+- Remove Debris
+- Remove Stump
+- Removing Wildlife
+- Replacement Basket
+- Residential Rental Agency
+- Restaurant
+- Restaurant Status
+- Roadway
+- Rodent Sighting
+- Rodents/Insects/Garbage
+- Rodents/Mice
+- Rooftank Leak Or Overflow (CKO)
+- Rooster
+- Roots Damaged
+- Rough, Pitted or Cracked Roads
+- SEWAGE
+- SEWER
+- SIGNAGE MISSING
+- SKYLIGHT
+- SLOW LEAK
+- SMOKE DETECTOR
+- SPRINKLER
+- SRO - Illegal Work/No Permit/Change In Occupancy/Use
+- STAIRS
+- STEAM PIPE/RISER
+- Safety Netting/Guard Rails - Damaged/Inadequate/None (6 Stories/75 Feet Or Less)
+- Safety Netting/Guard Rails - Damaged/Inadequate/None (Over 6 Stories/75 Feet)
+- Scale Dealer or Repairer
+- School Crossing
+- Scrap Metal Processor
+- Sewage Leak
+- Sewage Odor
+- Sewer Backup (Use Comments) (SA)
+- Sewer Odor (SA2)
+- Shipping Company
+- Sidewalk
+- Sidewalk Collapsed
+- Sidewalk Display
+- Sidewalk Grating - Defective
+- Sidewalk Grating - Missing
+- Sidewalk Shed/Pipe Scafford - Inadequate Defective/None
+- Sidewalk Violation
+- Sidewalk Zone Blocked
+- Sign
+- Sign - In Danger Of Falling
+- Sign Missing or Defective
+- Sign/Awning/Marquee - Illegal/No Permit
+- Signs of Rodents
+- Site Conditions Endangering Workers
+- Site Setup Condition
+- Small uncovered dumpster
+- Smoking
+- Smoking Ban - Smoking on Construction Site
+- Smoking Signs - "No Smoking" Signs Not Observed on Construction Site
+- Smoking, Cigar, or Vape Store
+- Snow Removal Requested
+- Snow Tracking
+- Snow or Ice
+- Snow/Ice
+- Speed Board Sign
+- Speed Limit
+- Spilled Garbage
+- Sports Equipment
+- Sprinkler System - Inadequate
+- Squirrel
+- St Name - Attached to Pole
+- St Name - Over Intersection
+- Sticker or Decal
+- Stoop Line Stand
+- Stop
+- Storage Area Not Provided
+- Storage Warehouse
+- Street Cleaning - ASP
+- Street Fair Vendor
+- Street Flooding (SJ)
+- Street Light Cycling
+- Street Light Dayburning
+- Street Light Feed
+- Street Light Lamp Dim
+- Street Light Lamp Missing
+- Street Light Out
+- Street Not Swept
+- Structural Stability Impacted - New Building Under Construction
+- Structure - Indoors
+- Structure - Outdoors
+- Summer Camp
+- Supermarket or Grocery Store
+- Support Bracket
+- Suspended (Hanging) Scaffolds - No Pmt/Lic/Dangerous/Accident
+- Sway Bar
+- Syringes
+- TOILET
+- Taste/Odor, Bitter/Metallic (QA3)
+- Taste/Odor, Chemical (QA2)
+- Taste/Odor, Chlorine (QA1)
+- Taste/Odor, Musty/Stale (QA4)
+- Taste/Odor, Sewer (QA5)
+- Tax Preparation Services
+- Telco Connection Blk
+- Temporary
+- Tenant Refusal
+- Tenant Safety Inspection
+- Third-Party Food Delivery Service
+- Ticket Seller
+- Time Switch
+- Timer Defect - Fast/Fail
+- Tobacco Sales
+- Toilet Facility
+- Tortured
+- Touchscreen/Button Not Working
+- Tow Truck Company
+- Traffic Camera
+- Traffic Sign or Signal Blocked
+- Traffic Signal Light
+- Trash
+- Trash and Bulky Trash
+- Trash or Recycling
+- Trash or Recycling Not Secure
+- Travel Agency
+- Tree Alive - in Poor Condition
+- Tree Leaning/Uprooted
+- Tree Trunk Split
+- Trees and Sidewalks Program
+- Trespassing
+- Truck Route Violation
+- Trunk Damaged
+- Unauthorized Bus Layover
+- Unauthorized Climbing
+- Unauthorized Tree Pruning
+- Unauthorized Tree Removal
+- Unclean Condition
+- Underage - Licensed Est
+- Underground
+- Unleashed Dog in Public
+- Unlicensed Vendors
+- Unsafe Chemical, Abandoned (HC2)
+- Unsafe Chemical, Storage (HC1)
+- Unsafe Driving
+- Unsafe Mold Cleanup
+- Unsafe Use of Playground
+- Unsafe Worksite
+- Unsanitary Condition
+- Unsecured Facility
+- Use Indoor
+- Use Outside
+- Use of Newly Seeded Lawn
+- Used Car Dealer
+- Used Goods Dealer
+- VENTILATION SYSTEM
+- Veh Sgnl Mult Lamps
+- Veh Signal Head
+- Veh Signal Lamp
+- Veh Signal Lens
+- Veh Signal Sec Door
+- Veh Signal Visor
+- Vehicle
+- Vehicle Complaint
+- Vehicle Signal
+- Vent/Exhaust - Illegal/Improper
+- Ventilation
+- Ver Mesage Sign RTPI
+- WALL
+- WATER SUPPLY
+- WINDOW FRAME
+- WINDOW GUARD BROKEN/MISSING
+- WINDOW PANE
+- WINDOW/FRAME
+- WIRING
+- Wall/Retaining Wall - Bulging/Cracked
+- Warning Buzzer
+- Warning Signal
+- Warning Signal Lamp
+- Waste Disposal
+- Waste Left in Front of Other Residence
+- Waste Left in Front of Residence
+- Waste Not Separated
+- Waste Set Out Too Early or Too Late
+- Wastewater Into Catch Basin (IEB)
+- Wasting Faucets,Sinks,Flushometer,Urinal,Etc. - Other (CWO)
+- Wasting Faucets,Sinks,Flushometer,Urinal,Etc. - Private Residence (CWR)
+- Water Meter Broken/Leaking - Other (CMO)
+- Water Meter Broken/Leaking - Private Residence (CMR)
+- Water Meter Stolen/Missing - Other (CLO)
+- Water Meter Stolen/Missing - Private Residence (CLR)
+- Waterway-Color (IHD)
+- Weeds or Grass
+- Wholesale Food Market
+- WiFi/Internet Not Working/Slow
+- Wildlife Sighting
+- Wireless
+- With License Plate
+- Wood Pole Equipment
+- Work Without A Permit - Occupied Multiple Dwelling
+- Working Contrary To Stop Work Order
+- Yield
+- Zoning - Non-Conforming/Illegal Vehicle Storage
+- installation of hydrant side post (WHFP)
+- unknown odor/taste in drinking water (QA6)
+
+## incident_zip (195 unique)
+
+- 10001
+- 10002
+- 10003
+- 10004
+- 10005
+- 10006
+- 10007
+- 10009
+- 10010
+- 10011
+- 10012
+- 10013
+- 10014
+- 10016
+- 10017
+- 10018
+- 10019
+- 10020
+- 10021
+- 10022
+- 10023
+- 10024
+- 10025
+- 10026
+- 10027
+- 10028
+- 10029
+- 10030
+- 10031
+- 10032
+- 10033
+- 10034
+- 10035
+- 10036
+- 10037
+- 10038
+- 10039
+- 10040
+- 10041
+- 10044
+- 10069
+- 10103
+- 10111
+- 10112
+- 10119
+- 10128
+- 10152
+- 10154
+- 10162
+- 10169
+- 10170
+- 10171
+- 10172
+- 10173
+- 10177
+- 10278
+- 10279
+- 10280
+- 10282
+- 10301
+- 10302
+- 10303
+- 10304
+- 10305
+- 10306
+- 10307
+- 10308
+- 10309
+- 10310
+- 10312
+- 10314
+- 10451
+- 10452
+- 10453
+- 10454
+- 10455
+- 10456
+- 10457
+- 10458
+- 10459
+- 10460
+- 10461
+- 10462
+- 10463
+- 10464
+- 10465
+- 10466
+- 10467
+- 10468
+- 10469
+- 10470
+- 10471
+- 10472
+- 10473
+- 10474
+- 10475
+- 11001
+- 11004
+- 11005
+- 11040
+- 11101
+- 11102
+- 11103
+- 11104
+- 11105
+- 11106
+- 11201
+- 11203
+- 11204
+- 11205
+- 11206
+- 11207
+- 11208
+- 11209
+- 11210
+- 11211
+- 11212
+- 11213
+- 11214
+- 11215
+- 11216
+- 11217
+- 11218
+- 11219
+- 11220
+- 11221
+- 11222
+- 11223
+- 11224
+- 11225
+- 11226
+- 11228
+- 11229
+- 11230
+- 11231
+- 11232
+- 11233
+- 11234
+- 11235
+- 11236
+- 11237
+- 11238
+- 11239
+- 11354
+- 11355
+- 11356
+- 11357
+- 11358
+- 11360
+- 11361
+- 11362
+- 11363
+- 11364
+- 11365
+- 11366
+- 11367
+- 11368
+- 11369
+- 11370
+- 11372
+- 11373
+- 11374
+- 11375
+- 11377
+- 11378
+- 11379
+- 11385
+- 11411
+- 11412
+- 11413
+- 11414
+- 11415
+- 11416
+- 11417
+- 11418
+- 11419
+- 11420
+- 11421
+- 11422
+- 11423
+- 11426
+- 11427
+- 11428
+- 11429
+- 11430
+- 11432
+- 11433
+- 11434
+- 11435
+- 11436
+- 11691
+- 11692
+- 11693
+- 11694
+- 11697
+
+## borough (5 unique)
+
+- bronx
+- brooklyn
+- manhattan
+- queens
+- staten_island
+
+## location_type (84 unique)
+
+- 1-2 Family Dwelling
+- 1-2 Family Mixed Use Building
+- 1-3 Family Dwelling
+- 3+ Family Apartment Building
+- 3+ Family Apt. Building
+- 3+ Family Mixed Use Building
+- Alley
+- Apartment
+- Bridge
+- Building Entrance
+- Bus Stop Shelter
+- Business
+- Cafeteria - College/University
+- Cafeteria - Public School
+- Catch Basin or Sewer
+- Catering Service
+- Club/Bar/Restaurant
+- Comercial
+- Commercial
+- Commercial Building
+- Common Area
+- Crosswalk
+- Curb
+- Day Care or Nursery
+- Food Cart Vendor
+- Food Establishment or Vendor
+- Government Building
+- Gutter
+- Hallway
+- Highway
+- Hospital
+- House and Store
+- House of Worship
+- Inside
+- Intersection
+- Kennel/Animal Shelter
+- Lobby
+- Lot
+- Mixed Use
+- N/A
+- Office Building
+- Other
+- Other (Explain Below)
+- Overpass
+- Park
+- Park/Playground
+- Parking Lot
+- Parking Lot or Garage
+- Petting Zoo/Animal Exhibit
+- Pier
+- Pool
+- Private House
+- Private Property
+- Private Residence
+- Private School
+- Public Garden
+- Public School
+- Public Stairs
+- Public/Unfenced Area
+- RESIDENTIAL BUILDING
+- Residence
+- Residential
+- Residential Building
+- Residential Building/House
+- Restaurant
+- Restaurant/Bar/Deli/Bakery
+- Retail Store
+- School
+- Sidewalk
+- Soup Kitchen
+- Speed Reducer
+- Stairwell
+- Store/Commercial
+- Street
+- Street/Curbside
+- Street/Sidewalk
+- Subway Station
+- Taxi
+- Traffic Island or Median
+- Vacant Building
+- Vacant Lot
+- Vehicle Lane
+- Yard
+- unknown
+
+## resolution_in_wk (2 unique)
+
+- 0
+- 1
+
+## complaint_hr (24 unique)
+
+- 0
+- 1
+- 10
+- 11
+- 12
+- 13
+- 14
+- 15
+- 16
+- 17
+- 18
+- 19
+- 2
+- 20
+- 21
+- 22
+- 23
+- 3
+- 4
+- 5
+- 6
+- 7
+- 8
+- 9
+
+## complaint_day (7 unique)
+
+- 0
+- 1
+- 2
+- 3
+- 4
+- 5
+- 6
+
+## complaint_month (2 unique)
+
+- 2
+- 3
