@@ -8,14 +8,11 @@ The system is designed as a portfolio-ready machine learning application, showin
 
 ## 🚀 Live API
 
-🔗 **Formatted HTML page:**  
-https://d3oxki74u11f6.cloudfront.net
+🔗 [**Formatted HTML page**](https://d3oxki74u11f6.cloudfront.net)
 
-🔗 **Swagger Docs:**  
-https://dyypyhmjdv.us-east-1.awsapprunner.com/docs  
+🔗 [**Swagger Docs**](https://dyypyhmjdv.us-east-1.awsapprunner.com/docs)  
 
-🔗 **Health Check:**  
-https://dyypyhmjdv.us-east-1.awsapprunner.com/health  
+🔗 [**Health Check**](https://dyypyhmjdv.us-east-1.awsapprunner.com/health)  
 
 ---
 
