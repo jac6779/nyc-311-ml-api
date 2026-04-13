@@ -222,8 +222,9 @@ This project demonstrates:
 
 ## Related Projects
 
-- Citi Bike Dock Availability Prediction
-- Brooklyn Home Price Prediction API
+- [Citi Bike Dock Availability Prediction](https://github.com/jac6779/citi-bike-prediction)  
+
+- [Brooklyn Home Price Prediction API](https://github.com/jac6779/brooklyn-home-sales-llm)  
 
 These projects complement this work by showing:
 
