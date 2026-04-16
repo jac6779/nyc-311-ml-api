@@ -35,3 +35,11 @@ Thumbs.db
 
 # Git
 .git/
+
+# Folders
+frontend/
+help/
+
+# Joblib artifacts
+models/*.joblib
+!models/deploy_pipeline.joblib
