@@ -10,6 +10,7 @@ MODEL_FEATURES = [
     "location_type",
     "complaint_hr",
     "complaint_day",
+    "complaint_month"
 ]
 
 def build_model_features(df: pd.DataFrame) -> pd.DataFrame:
@@ -26,7 +27,7 @@ def build_model_features(df: pd.DataFrame) -> pd.DataFrame:
             X[col] = np.nan
         X[col] = pd.to_numeric(X[col], errors="coerce")
 
-    for col in ["complaint_hr", "complaint_day"]:
+    for col in ["complaint_hr", "complaint_day", "complaint_month"]:
         if col not in X.columns:
             X[col] = -1
         X[col] = pd.to_numeric(X[col], errors="coerce").fillna(-1).astype(int)

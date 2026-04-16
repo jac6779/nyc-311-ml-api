@@ -10,7 +10,6 @@ This project follows a structured CRISP-DM workflow and is designed to show the 
 
 - [Formatted HTML page](https://d3oxki74u11f6.cloudfront.net)
 - [Swagger Docs](https://dyypyhmjdv.us-east-1.awsapprunner.com/docs)
-- [Health Check](https://dyypyhmjdv.us-east-1.awsapprunner.com/health)
 
 * * *
 
@@ -50,7 +49,6 @@ The raw data was pulled from the NYC Open Data API and included complaint metada
   - `complaint_hr`
   - `complaint_day`
   - `complaint_month`
-- Standardized borough and ZIP code values
 - Converted latitude and longitude to numeric fields
 - Filled missing categorical values with `"unknown"`
 
@@ -81,6 +79,7 @@ The raw data was pulled from the NYC Open Data API and included complaint metada
 - Used a preprocessing pipeline with:
   - `StandardScaler` for numeric fields
   - `OneHotEncoder(handle_unknown="ignore")` for categorical fields
+  - `CyclicalFeatures` for temporal features
 - Split the data into stratified train/test sets
 - Exported transformed train/test datasets for modeling
 - Saved the fitted preprocessing pipeline for deployment
@@ -107,9 +106,9 @@ Evaluation focused on:
 
 | Model | ROC-AUC | PR-AUC | Precision | Recall | F1-Score |
 |---|---:|---:|---:|---:|---:|
-| Random Forest | 0.957 | 0.529 | 0.291 | 0.888 | 0.438 |
-| XGBoost | 0.952 | 0.470 | 0.219 | 0.949 | 0.356 |
-| Logistic Regression | 0.943 | 0.414 | 0.209 | 0.910 | 0.340 |
+| Random Forest | 0.951 | 0.714 | 0.520 | 0.957 | 0.674 |
+| XGBoost | 0.946 | 0.714 | 0.535 | 0.935 | 0.680 |
+| Logistic Regression | 0.945 | 0.706 | 0.528 | 0.935 | 0.675 |
 
 Random Forest was selected as the final model because it produced the strongest overall balance of ROC-AUC, PR-AUC, precision, and F1-score on this imbalanced classification task.
 
@@ -118,10 +117,8 @@ Random Forest was selected as the final model because it produced the strongest 
 ### 5️⃣ Export Pipeline (`05_nyc_311_project_export_pipeline.ipynb`)
 
 - Loaded the saved preprocessor and final Random Forest model
-- Tested inference using deployment-ready artifacts
-- Built a ZIP-to-coordinate lookup table using median latitude/longitude by ZIP
 - Prepared supporting files for deployment and easier user input handling
-- Structured outputs for downstream API use and Tableau-ready workflows
+- Structured outputs for downstream API use
 
 * * *
 
@@ -161,16 +158,14 @@ NYC Open Data API → Preprocessing → Feature Engineering → Model Training �
 ```json
 {
   "agency": "NYPD",
-  "complaint_type": "Noise - Residential",
-  "descriptor": "Loud Music/Party",
-  "location_type": "Residential Building/House",
   "borough": "BROOKLYN",
-  "incident_zip": "11201",
-  "latitude": 40.6943,
-  "longitude": -73.9928,
-  "complaint_hr": 22,
   "complaint_day": 5,
-  "complaint_month": 7
+  "complaint_hr": 22,
+  "complaint_month": 4,
+  "complaint_type": "Noise - Residential",
+  "location_type": "Residential Building/House",
+  "latitude": 40.6943,
+  "longitude": -73.9928
 }
 ```
 
@@ -194,15 +189,14 @@ NYC Open Data API → Preprocessing → Feature Engineering → Model Training �
 - FastAPI
 - Docker
 - AWS
-- Tableau
 
 * * *
 
 ## Docker Usage
 
 ```bash
-docker build -t nyc-311-api .
-docker run -p 8080:8080 nyc-311-api
+docker build -t nyc-311-ml-api .
+docker run -p 8080:8080 nyc-311-ml-api
 ```
 
 * * *
